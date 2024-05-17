@@ -1,13 +1,10 @@
-# AdaNet
+# AdaNet (Pattern Recognition)
 Codes for paper "AdaNet: A Competitive Adaptive Convolutional Neural Network for Spectral Information Identification".
-# Anomaly-Transformer (ICLR 2022 Spotlight)
-Anomaly Transformer: Time Series Anomaly Detection with Association Discrepancy
-
 Unsupervised detection of anomaly points in time series is a challenging problem, which requires the model to learn informative representation and derive a distinguishable criterion. In this paper, we propose the Anomaly Transformer in these three folds:
 
-- An inherent distinguishable criterion as **Association Discrepancy** for detection.
-- A new **Anomaly-Attention** mechanism to compute the association discrepancy.
-- A **minimax strategy** to amplify the normal-abnormal distinguishability of the association discrepancy.
+- AdaConv based on competition idea is proposed to reduce redundant spectral features.
+- Self-attention mask is designed to mitigate the loss of convolution.
+- AdaNet is proposed for spectral information identification.
 
 <p align="center">
 <img src=".\pics\structure.png" height = "350" alt="" align=center />
@@ -16,21 +13,17 @@ Unsupervised detection of anomaly points in time series is a challenging problem
 ## Get Started
 
 1. Install Python 3.6, PyTorch >= 1.4.0. 
-(Thanks Élise for the contribution in solving the environment. See this [issue](https://github.com/thuml/Anomaly-Transformer/issues/11) for details.)
-2. Download data. You can obtain four benchmarks from [Google Cloud](https://drive.google.com/drive/folders/1gisthCoE-RrKJ0j3KPV7xiibhHWT9qRm?usp=sharing). **All the datasets are well pre-processed**. For the SWaT dataset, you can apply for it by following its official tutorial.
-3. Train and evaluate. We provide the experiment scripts of all benchmarks under the folder `./scripts`. You can reproduce the experiment results as follows:
-```bash
-bash ./scripts/SMD.sh
-bash ./scripts/MSL.sh
-bash ./scripts/SMAP.sh
-bash ./scripts/PSM.sh
-```
+( The required environment versions will be updated shortly.)
+2. Download data. Due to corporate confidentiality agreements and other reasons, the data used are currently not available to the public. Should you have a need for it, please contact us via email at (shiyan@neepu.edu.cn). **All the datasets are well pre-processed**. 
+3. We will provide comprehensive training and testing scripts, including multiple sets of learning rate configurations, annealing algorithms, and select hyperparameters, upon the formal acceptance of our paper.
 
-Especially, we use the adjustment operation proposed by [Xu et al, 2018](https://arxiv.org/pdf/1802.03903.pdf) for model evaluation. If you have questions about this, please see this [issue](https://github.com/thuml/Anomaly-Transformer/issues/14) or email us.
+"""
+If you have questions about this, please email us for (1106860376@qq.com) or  (shiyan@neepu.edu.cn).
+"""
 
 ## Main Result
 
-We compare our model with 15 baselines, including THOC, InterFusion, etc. **Generally,  Anomaly-Transformer achieves SOTA.**
+To more prominently demonstrate the potential of the method in this paper, we compare the performance of AdaNet with some common CNNs. Because the spectral information obtained from hyperspectral systems has the advantages of good reproducibility, stability and high detection accuracy, the sample amount is small. If the model has too many parameters, it will increase the risk of overfitting, while increasing the time cost of training and inference. To avoid this problem, AdaNet combined the design idea of lightweighting, while choosing relativelylightweight models (MobileNet-V2, ShuffleNet-V2, GoogLeNet, ResNet-18, SqueezeNet, AlexNet) were compared. **Generally,  AdaNet achieves SOTA.**
 
 <p align="center">
 <img src=".\pics\result.png" height = "450" alt="" align=center />
@@ -51,4 +44,4 @@ url={××××××××××××××××}
 ```
 
 ## Contact
-If you have any question, please contact wuhx23@mails.tsinghua.edu.cn.
+If you have any question, please contact (1106860376@qq.com) or  (shiyan@neepu.edu.cn).
