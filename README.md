@@ -26,7 +26,7 @@ If you have questions about this, please email us for (1106860376@qq.com) or  (s
 To more prominently demonstrate the potential of the method in this paper, we compare the performance of AdaNet with some common CNNs. Because the spectral information obtained from hyperspectral systems has the advantages of good reproducibility, stability and high detection accuracy, the sample amount is small. If the model has too many parameters, it will increase the risk of overfitting, while increasing the time cost of training and inference. To avoid this problem, AdaNet combined the design idea of lightweighting, while choosing relativelylightweight models (MobileNet-V2, ShuffleNet-V2, GoogLeNet, ResNet-18, SqueezeNet, AlexNet) were compared. **Generally,  AdaNet achieves SOTA.**
 
 <p align="center">
-<img src="AdaConv.png" height = "450" alt="" align=center />
+<img src="table.png" height = "450" alt="" align=center />
 </p>
 
 ## Citation
