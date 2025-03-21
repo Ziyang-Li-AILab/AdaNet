@@ -1,11 +1,12 @@
 """
 Codes for paper "AdaNet: A Competitive Adaptive Convolutional Neural Network for Spectral Information Identification".
 @article{
-    LiSir000,
+    ziyang li,
     title={AdaNet: A Competitive Adaptive Convolutional Neural Network for Spectral Information Identification},
-    author={Ziyang Li},
+    author={Ziyang Li, Yang Yu, Chongbo Yin, Yan Shi},
     journal={Pattern Recognition},
-    year={2024}
+    year={2025},
+    url={https://doi.org/10.1016/j.patcog.2025.111472}
 }
 """
 
