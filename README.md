@@ -1,6 +1,6 @@
-# AdaNet (Pattern Recognition)
+# AdaNet
 Codes for paper "AdaNet: A Competitive Adaptive Convolutional Neural Network for Spectral Information Identification".
-Unsupervised detection of anomaly points in time series is a challenging problem, which requires the model to learn informative representation and derive a distinguishable criterion. In this paper, we propose the Anomaly Transformer in these three folds:
+Our contributions are as follows:
 
 - AdaConv based on competition idea is proposed to reduce redundant spectral features.
 - Self-attention mask is designed to mitigate the loss of convolution.
@@ -12,7 +12,7 @@ Unsupervised detection of anomaly points in time series is a challenging problem
 
 ## Get Started
 
-1. Install Python 3.6, PyTorch >= 1.4.0. 
+1. Install Python >= 3.6, PyTorch >= 1.4.0. 
 ( The required environment versions will be updated shortly.)
 2. Download data. Due to corporate confidentiality agreements and other reasons, the data used are currently not available to the public. Should you have a need for it, please contact us via email at (shiyan@neepu.edu.cn). **All the datasets are well pre-processed**. 
 3. We will provide comprehensive training and testing scripts, including multiple sets of learning rate configurations, annealing algorithms, and select hyperparameters, upon the formal acceptance of our paper.
@@ -38,8 +38,8 @@ ziyang li,
 title={AdaNet: A Competitive Adaptive Convolutional Neural Network for Spectral Information Identification},
 author={Ziyang Li, Yang Yu, Chongbo Yin, Yan Shi},
 journal={Pattern Recognition},
-year={2022},
-url={××××××××××××××××}
+year={2025},
+url={https://doi.org/10.1016/j.patcog.2025.111472}
 }
 ```
 
